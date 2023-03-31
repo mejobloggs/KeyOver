@@ -1,0 +1,51 @@
+{
+  "KeyGroups": [
+    {
+      "UniqueName": "Left",
+      "KeyRows": [
+        [
+          "nk",
+          "w",
+          "e",
+          "r",
+          "t",
+          "y",
+          "?"
+        ],
+        [
+          "a",
+          "s",
+          "nk",
+          "d"
+        ],
+        [
+          "z",
+          "x",
+          "c",
+          "v",
+          "b",
+          "n"
+        ]
+      ],
+      "GridAlignment": 0
+    },
+    {
+      "UniqueName": "Right",
+      "KeyRows": [
+        [
+          "nk",
+          "p"
+        ],
+        [
+          "l"
+        ],
+        [
+          "m",
+          "n",
+          "m"
+        ]
+      ],
+      "GridAlignment": 0
+    }
+  ]
+}
