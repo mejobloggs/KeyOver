@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace KeyOver.Services.KeyboardLayoutConfig;
-internal class FileLoader : IKeyboardConfigLoader
+public class FileLoader : IKeyboardConfigLoader
 {
     private readonly string _filePath;
     public FileLoader(string fileName)

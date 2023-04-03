@@ -15,7 +15,7 @@ public class JsonProvider : IKeyboardConfigProvider
     {
         this.configLoader = configLoader;
     }
-    public KeyboardLayoutModel Get()
+    public KeyboardLayoutModel GetKeyboardLayoutConfig()
     {
         var data = configLoader.GetDataAsString();
 

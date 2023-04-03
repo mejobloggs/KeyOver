@@ -1,0 +1,60 @@
+{
+  "KeyGroups": [
+    {
+      "UniqueName": "Left",
+      "KeyRows": [
+        [
+          "w",
+          "l",
+          "y",
+          "p",
+          "b"
+        ],
+        [
+          "c",
+          "r",
+          "s",
+          "t",
+          "g"
+        ],
+        [
+          "q",
+          "j",
+          "v",
+          "d",
+          "k"
+        ]
+      ],
+      "GridAlignment": 0,
+      "IndexFingerLetter": "t"
+    },
+    {
+      "UniqueName": "Right",
+      "KeyRows": [
+        [
+          "z",
+          "f",
+          "o",
+          "u",
+          "'"
+        ],
+        [
+          "m",
+          "n",
+          "e",
+          "i",
+          "a"
+        ],
+        [
+          "x",
+          "h",
+          "/",
+          ",",
+          "."
+        ]
+      ],
+      "GridAlignment": 0,
+      "IndexFingerLetter": "n"
+    }
+  ]
+}

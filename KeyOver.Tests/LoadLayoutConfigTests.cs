@@ -13,7 +13,7 @@ public class LoadLayoutConfigTests
     {
         var dataLoader = new Services.KeyboardLayoutConfig.FileLoader("Test1.json");
         var provider = new Services.KeyboardLayoutConfig.JsonProvider(dataLoader);
-        var layout = provider.Get();
+        var layout = provider.GetKeyboardLayoutConfig();
 
         Assert.IsNotNull(layout);
     }

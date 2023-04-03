@@ -17,6 +17,7 @@ public class KeyboardLayoutModel
         //public int Angle { get; set; }
         //public string VerticalAlignment { get; set; }
         public GridAlignment GridAlignment { get; set; }
+        public string IndexFingerLetter { get; set; }
     }
 
     public enum GridAlignment

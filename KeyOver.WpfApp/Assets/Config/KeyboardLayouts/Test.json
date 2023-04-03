@@ -4,7 +4,7 @@
       "UniqueName": "Left",
       "KeyRows": [
         [
-          "",
+          null,
           "w",
           "e",
           "r",
@@ -15,8 +15,9 @@
         [
           "a",
           "s",
-          "",
-          "d"
+          null,
+          "d",
+          "f"
         ],
         [
           "z",
@@ -27,13 +28,14 @@
           "n"
         ]
       ],
-      "GridAlignment": 0
+      "GridAlignment": 0,
+      "IndexFingerLetter": "f"
     },
     {
       "UniqueName": "Right",
       "KeyRows": [
         [
-          "",
+          null,
           "p"
         ],
         [
@@ -45,7 +47,8 @@
           "m"
         ]
       ],
-      "GridAlignment": 0
+      "GridAlignment": 0,
+      "IndexFingerLetter": null
     }
   ]
 }

@@ -4,5 +4,5 @@ namespace KeyOver.Services.KeyboardLayoutConfig;
 
 public interface IKeyboardConfigProvider
 {
-    public KeyboardLayoutModel Get();
+    public KeyboardLayoutModel GetKeyboardLayoutConfig();
 }

@@ -7,4 +7,22 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Assets\Config\KeyboardLayouts\Canary.json" />
+    <None Remove="Assets\Config\KeyboardLayouts\Test.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\Config\KeyboardLayouts\Canary.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Config\KeyboardLayouts\Test.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KeyOver\KeyOver.csproj" />
+  </ItemGroup>
+
 </Project>
