@@ -19,7 +19,8 @@ public class KeyboardGridCreater
         var windowGrid = new Grid();
         windowGrid.HorizontalAlignment = HorizontalAlignment.Center;
         windowGrid.VerticalAlignment = VerticalAlignment.Bottom;
-        windowGrid.Margin = new Thickness(0, 0, 0, scale * 6);
+        //This margin raises it above taskbar
+        windowGrid.Margin = new Thickness(0, 0, 0, 60);
         windowGrid.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
 
         int col = 0;
@@ -31,6 +32,7 @@ public class KeyboardGridCreater
 
             if (col > 0)
             {
+                //gap between groups e.g. left/right/numpad
                 grid.Margin = new Thickness(scale * 5, 0, 0, 0);
             }
 
@@ -88,7 +90,9 @@ public class KeyboardGridCreater
 
                 TextBlock txt = new TextBlock();
                 txt.Text = keyText;
-                txt.FontSize = 14;
+                // I don't know how to get font to scale with the rest,
+                // so if you change scale might need to change font size also
+                txt.FontSize = 14; 
                 txt.FontWeight = FontWeights.Bold;
                 txt.TextAlignment = TextAlignment.Center;
                 txt.HorizontalAlignment = HorizontalAlignment.Stretch;
