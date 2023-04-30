@@ -61,6 +61,62 @@
       ],
       "GridAlignment": 0,
       "IndexFingerLetter": "n"
+    },
+    {
+      "UniqueName": "Sym",
+      "KeyRows": [
+        [
+          "$",
+          "{",
+          "}",
+          "*",
+          "^"
+        ],
+        [
+          "/",
+          "(",
+          ")",
+          "_",
+          "&"
+        ],
+        [
+          "~",
+          "[",
+          "]",
+          ";",
+          "|"
+        ]
+      ],
+      "GridAlignment": 0,
+      "IndexFingerLetter": "_"
+    },
+    {
+      "UniqueName": "Sym",
+      "KeyRows": [
+        [
+          "%",
+          "@",
+          "<",
+          ">",
+          "../"
+        ],
+        [
+          "#",
+          "=",
+          "-",
+          ":",
+          "!"
+        ],
+        [
+          "?",
+          "?",
+          "?",
+          "?",
+          "?"
+        ]
+      ],
+      "GridAlignment": 0,
+      "IndexFingerLetter": "="
     }
   ]
 }
