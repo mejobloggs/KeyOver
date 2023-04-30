@@ -13,12 +13,13 @@ namespace KeyOver.WpfApp;
 
 public class KeyboardGridCreater
 {
+    private int scale = 6;
     public Grid GetGrid(KeyboardLayoutModel keyboardModel)
     {
         var windowGrid = new Grid();
         windowGrid.HorizontalAlignment = HorizontalAlignment.Center;
         windowGrid.VerticalAlignment = VerticalAlignment.Bottom;
-        windowGrid.Margin = new Thickness(0, 0, 0, 60);
+        windowGrid.Margin = new Thickness(0, 0, 0, scale * 6);
         windowGrid.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
 
         int col = 0;
@@ -28,9 +29,9 @@ public class KeyboardGridCreater
 
             var grid = GetKeyGroupGrid(keyGroup);
 
-            if(col > 0)
+            if (col > 0)
             {
-                grid.Margin = new Thickness(50,0,0,0);
+                grid.Margin = new Thickness(scale * 5, 0, 0, 0);
             }
 
             Grid.SetColumn(grid, col++);
@@ -38,9 +39,6 @@ public class KeyboardGridCreater
 
             windowGrid.Children.Add(grid);
         }
-
-
-
 
         return windowGrid;
     }
@@ -79,24 +77,22 @@ public class KeyboardGridCreater
                 border.BorderThickness = new Thickness(1);
                 border.CornerRadius = new CornerRadius(5);
                 border.Background = Brushes.LightBlue;
-                border.Margin = new Thickness(2);
-                border.Width = 50;
-                border.Height = 50;
+                border.Margin = new Thickness(1);
+                border.Width = scale * 5;
+                border.Height = scale * 5;
 
                 if (!string.IsNullOrEmpty(keyText) && keyText == keyGroup.IndexFingerLetter)
                 {
                     border.Background = Brushes.LightSalmon;
                 }
 
-
                 TextBlock txt = new TextBlock();
                 txt.Text = keyText;
-                txt.FontSize = 20;
+                txt.FontSize = 14;
                 txt.FontWeight = FontWeights.Bold;
                 txt.TextAlignment = TextAlignment.Center;
                 txt.HorizontalAlignment = HorizontalAlignment.Stretch;
                 txt.VerticalAlignment = VerticalAlignment.Center;
-                
 
                 border.Child = txt;
 

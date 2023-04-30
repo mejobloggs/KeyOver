@@ -11,7 +11,7 @@ public class LoadLayoutConfigTests
     [TestMethod]
     public void CanLoadAndDeserializeJson()
     {
-        var dataLoader = new Services.KeyboardLayoutConfig.FileLoader("Test1.json");
+        var dataLoader = new Services.KeyboardLayoutConfig.FileLoader("test-layout.json");
         var provider = new Services.KeyboardLayoutConfig.JsonProvider(dataLoader);
         var layout = provider.GetKeyboardLayoutConfig();
 

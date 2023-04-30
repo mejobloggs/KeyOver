@@ -10,11 +10,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\Config\KeyboardLayouts\Test1.json" />
+    <Compile Remove="Assets\**" />
+    <EmbeddedResource Remove="Assets\**" />
+    <None Remove="Assets\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Assets\Config\KeyboardLayouts\Test1.json">
+    <None Remove="Config\test-layout.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Config\test-layout.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

@@ -11,7 +11,7 @@ public class FileLoader : IKeyboardConfigLoader
     private readonly string _filePath;
     public FileLoader(string fileName)
     {
-        var folderPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Assets\Config\KeyboardLayouts");
+        var folderPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Config");
         _filePath = Path.Combine(folderPath, fileName);
     }
     public string GetDataAsString()

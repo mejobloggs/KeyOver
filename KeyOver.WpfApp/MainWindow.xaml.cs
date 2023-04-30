@@ -24,9 +24,9 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         var gridCreater = new KeyboardGridCreater();
-        var testLayout = new JsonProvider(new FileLoader("Canary.json")).GetKeyboardLayoutConfig();
+        var layout = new JsonProvider(new FileLoader("default-layout.json")).GetKeyboardLayoutConfig();
 
-        Content = gridCreater.GetGrid(testLayout);
+        Content = gridCreater.GetGrid(layout);
 
         InitializeComponent();
 
